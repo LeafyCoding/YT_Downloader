@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Resources/Themes/MaterialDesignTheme.MahApps.Fonts.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Resources/Themes/MaterialDesignTheme.MahApps.Flyout.xaml" />
+        <ResourceDictionary
+            Source="pack://application:,,,/Resources/Themes/MaterialDesignTheme.MahApps.RangeSlider.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style BasedOn="{StaticResource MaterialDesignRangeSlider}" TargetType="{x:Type controls:RangeSlider}" />
+</ResourceDictionary>
