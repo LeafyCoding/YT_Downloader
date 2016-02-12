@@ -15,7 +15,7 @@ using System.Runtime.CompilerServices;
 
 namespace LeafyYT_Downloader.Classes
 {
-    internal class SelectableViewModel : INotifyPropertyChanged
+    internal sealed class SelectableViewModel : INotifyPropertyChanged
     {
         private bool _isSelected;
         private string _name;
@@ -68,7 +68,7 @@ namespace LeafyYT_Downloader.Classes
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             var handler = PropertyChanged;
             handler?.Invoke(this, new PropertyChangedEventArgs(propertyName));

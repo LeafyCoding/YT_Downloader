@@ -15,7 +15,7 @@ using System.Windows.Input;
 
 namespace LeafyYT_Downloader.Classes
 {
-    internal class DelegateCommand : ICommand
+    internal sealed class DelegateCommand : ICommand
     {
         private readonly Func<bool> _canExecute;
         private readonly Action _execute;
@@ -28,10 +28,7 @@ namespace LeafyYT_Downloader.Classes
 
         public bool CanExecute(object parameter) => _canExecute == null || _canExecute();
 
-        public void Execute(object parameter)
-        {
-            _execute();
-        }
+        public void Execute(object parameter) => _execute();
 
         public event EventHandler CanExecuteChanged
         {

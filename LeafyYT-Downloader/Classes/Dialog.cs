@@ -16,7 +16,7 @@ using MahApps.Metro.Controls.Dialogs;
 
 namespace LeafyYT_Downloader.Classes
 {
-    internal class Dialog
+    internal static class Dialog
     {
         internal static async void ShowMessageDialog(string messageTitle, string message)
         {

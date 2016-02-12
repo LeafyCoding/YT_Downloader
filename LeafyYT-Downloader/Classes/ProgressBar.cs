@@ -15,7 +15,7 @@ using System.Text;
 
 namespace LeafyYT_Downloader.Classes
 {
-    internal class ProgressBar
+    internal static class ProgressBar
     {
         private static readonly StringBuilder progressBar = new StringBuilder();
 
