@@ -212,3 +212,4 @@ _Pvt_Extensions/
 ModelManifest.xml
 
 !LeafyYT-Downloader/libmp3*.dll
+!Binary/*
